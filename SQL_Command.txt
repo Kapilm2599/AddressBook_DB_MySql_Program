@@ -39,3 +39,26 @@ values('Govardhan','Reddy','Tirupati','Tirupati','Andhra Pradesh','123456','8555
 insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
 values('Rama','Rao','Tirupati','Tirupati','Andhra Pradesh','123456','123654','ramarao@gmail.com');
 select*from AddressBook;
+
+UC4 Edit Contact details ;
+
+create database AddressBookService;
+use AddressBookService;
+Create table AddressBook(
+firstName varchar(20),
+lastName varchar(20),
+address varchar(20),
+city varchar(20),
+state varchar(20),
+zip int,
+phoneNumber int,
+email varchar(20),
+primary key(firstName)
+);
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
+values('Govardhan','Reddy','Tirupati','Tirupati','Andhra Pradesh','123456','85558','govardhan@gmail.com');
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
+values('Rama','Rao','Tirupati','Tirupati','Andhra Pradesh','123456','123654','ramarao@gmail.com');
+update AddressBook set lastName = 'Reddy',city = 'chittoor'
+where firstName = 'Rama';
+select*from AddressBook;
