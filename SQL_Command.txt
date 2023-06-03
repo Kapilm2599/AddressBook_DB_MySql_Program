@@ -1,3 +1,20 @@
 UC1 Create Address book service database : 
 
 create database AddressBookService;
+
+UC2 Add columns to AddressBook table : 
+
+create database AddressBookService;
+use AddressBookService;
+Create table AddressBook(
+firstName varchar(20),
+lastName varchar(20),
+address varchar(20),
+city varchar(20),
+state varchar(20),
+zip int,
+phoneNumber int,
+email varchar(20),
+primary key(firstName)
+);
+select*from AddressBook;
