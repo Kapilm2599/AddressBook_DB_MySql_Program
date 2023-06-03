@@ -110,7 +110,7 @@ update AddressBook set lastName = 'Mahajan',city = 'wardha'
 where firstName = 'Arpit';
 delete from Addressbook where firstName = 'Arpit';
 insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
-values('Aman','Wagh','Nagpur','Nagpur','Maharastra','990100','738774','aman@gmail.com');
+values('Aman','Wagh','Nagpur','Nagpur','Maharastra','990100','738774','kapil@gmail.com');
 insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
 values('Arpit','Gode','Nagpur','Nagpur','Maharastra','123456','123654','Arpit@gmail.com');
 select*from AddressBook;
