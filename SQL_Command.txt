@@ -178,3 +178,11 @@ select city,state from AddressBook where firstName = 'Kapil';
 select count(city = 'Nagpur')from AddressBook;
 select count(state = 'Maharastra')from AddressBook;
 select firstName from AddressBook order by firstName asc;
+
+UC9 Add columns to address book table : 
+
+SELECT * FROM addressbookservice.addressbook;
+alter table addressbookservice.addressbook add AnotherPersonName varchar(20);
+alter table addressbookservice.addressbook add friends varchar(1);
+alter table addressbookservice.addressbook add family varchar(1);
+alter table addressbookservice.addressbook add profession varchar(1);
