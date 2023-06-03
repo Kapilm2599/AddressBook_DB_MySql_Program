@@ -86,3 +86,32 @@ update AddressBook set lastName = 'Mahajan',city = 'wardha'
 where firstName = 'Arpit';
 delete from Addressbook where firstName = 'Arpit';
 select*from AddressBook;
+
+UC6 Retrive data use person name : 
+
+create database AddressBookService;
+use AddressBookService;
+Create table AddressBook(
+firstName varchar(20),
+lastName varchar(20),
+address varchar(20),
+city varchar(20),
+state varchar(20),
+zip int,
+phoneNumber int,
+email varchar(20),
+primary key(firstName)
+);
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
+values('Kapil','Mahajan','Nagpur','Nagpur','Maharastra','990100','738774','kapil@gmail.com');
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
+values('Arpit','Gode','Nagpur','Nagpur','Maharastra','123456','123654','Arpit@gmail.com');
+update AddressBook set lastName = 'Mahajan',city = 'wardha'
+where firstName = 'Arpit';
+delete from Addressbook where firstName = 'Arpit';
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
+values('Aman','Wagh','Nagpur','Nagpur','Maharastra','990100','738774','aman@gmail.com');
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
+values('Arpit','Gode','Nagpur','Nagpur','Maharastra','123456','123654','Arpit@gmail.com');
+select*from AddressBook;
+select city,state from AddressBook where firstName = 'Kapil';
