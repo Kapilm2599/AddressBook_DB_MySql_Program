@@ -208,3 +208,6 @@ alter table addressbookservice.addressbook add profession varchar(1);
 select sum(case when friends is null then 0 else 1 end) from  addressbookservice.addressbook;
 select sum(case when profession is null then 0 else 1 end) from  addressbookservice.addressbook;
 select sum(case when family is null then 0 else 1 end) from  addressbookservice.addressbook;
+
+UC12 ER diagram ;
+
