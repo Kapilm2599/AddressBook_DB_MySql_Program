@@ -35,7 +35,7 @@ email varchar(20),
 primary key(firstName)
 );
 insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
-values('Govardhan','Reddy','Tirupati','Tirupati','Andhra Pradesh','123456','85558','govardhan@gmail.com');
+values('Kapil','Mahajan','Nagpur','Nagpur','Maharastra','990100','738774','kapil@gmail.com');
 insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email)
-values('Rama','Rao','Tirupati','Tirupati','Andhra Pradesh','123456','123654','ramarao@gmail.com');
+values('Arpit','Gode','Nagpur','Nagpur','Maharastra','123456','123654','Arpit@gmail.com');
 select*from AddressBook;
