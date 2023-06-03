@@ -186,3 +186,14 @@ alter table addressbookservice.addressbook add AnotherPersonName varchar(20);
 alter table addressbookservice.addressbook add friends varchar(1);
 alter table addressbookservice.addressbook add family varchar(1);
 alter table addressbookservice.addressbook add profession varchar(1);
+
+UC10 get number of contacts by count :
+
+SELECT * FROM addressbookservice.addressbook;
+alter table addressbookservice.addressbook add AnotherPersonName varchar(20);
+alter table addressbookservice.addressbook add friends varchar(1);
+alter table addressbookservice.addressbook add family varchar(1);
+alter table addressbookservice.addressbook add profession varchar(1);
+select sum(case when friends is null then 0 else 1 end) from  addressbookservice.addressbook;
+select sum(case when profession is null then 0 else 1 end) from  addressbookservice.addressbook;
+select sum(case when family is null then 0 else 1 end) from  addressbookservice.addressbook;
