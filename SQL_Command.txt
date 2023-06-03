@@ -1,0 +1,3 @@
+UC1 Create Address book service database : 
+
+create database AddressBookService;
